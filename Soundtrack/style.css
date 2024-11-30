@@ -1,0 +1,77 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 20px;  /* Rounded corners */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+/* Dropdown */
+select {
+    font-size: 0.9rem;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 100%;
+}
+
+/* Play/Pause Button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect on Button */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 200px;
+        padding: 10px;
+    }
+
+    select {
+        font-size: 0.8rem;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}

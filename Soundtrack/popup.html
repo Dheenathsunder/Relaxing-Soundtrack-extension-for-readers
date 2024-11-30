@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundTracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Mood dropdown to choose audio -->
+        <select id="moodSelect">
+            <option value="calm">Calm</option>
+            <option value="excited">Excited</option>
+            <option value="sad">Sad</option>
+            <option value="tense">Tense</option>
+        </select>
+
+        <!-- Play/Pause button -->
+        <button id="playPauseButton">Play</button>
+
+        <!-- Audio element (hidden) -->
+        <audio id="audioPlayer" loop></audio>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
